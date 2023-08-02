@@ -151,7 +151,7 @@ function Resume() {
     },
     {
       company: 'Cloudvests',
-      title: 'Web Developer',
+      title: 'Laravel Developer',
       logo: logoCloudvests,
       start: 'May 2021',
       end: 'Oct 2021',
