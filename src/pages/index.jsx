@@ -211,10 +211,10 @@ function Resume() {
           </li>
         ))}
       </ol>
-      {/*<Button href="#" variant="secondary" className="group mt-6 w-full">*/}
-      {/*  Download CV*/}
-      {/*  <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />*/}
-      {/*</Button>*/}
+      <Button href="/Elsayed_Kamal.pdf" variant="secondary" className="group mt-6 w-full">
+        Download CV
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </Button>
     </div>
   )
 }
@@ -225,7 +225,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[me_4 , me_2 , me_1 , me_3].map((image, imageIndex) => (
+        {[me_4, me_2, me_1, me_3].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -300,7 +300,7 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/*<Newsletter />*/}
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
