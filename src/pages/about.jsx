@@ -41,10 +41,10 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Dan Matthews</title>
+        <title>About - Elsayed Kamal</title>
         <meta
           name="description"
-          content="I’m Dan Matthews, I build web applications for a living using Laravel & PHP"
+          content="I’m Elsayed Kamal, I build web applications for a living using Laravel & PHP"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,58 +61,30 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Dan Matthews, and oh boy... I really hate writing these about pages.
+              I’m Elsayed Kamal, and oh boy... I really hate writing these about pages.
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <p>
-                I&apos;ll try and write some stuff here without going on too much! TL;DR? ADHD Web Developer working in the nonprofit industry. Trying to do some good through code.
-              </p>
-              <p>
-                I&apos;m a web developer and have been ever since I was given a book on CSS and HTML
-                from a friend&apos;s dad nearly two decades ago now, I&apos;ve been
-                fascinated with what you can do with code. I even turned down a place
-                at university to do mechanical engineering to delve further into the tech world.
-              </p>
-              <p>
-                I studied at the University of Cumbria on a course that promised a lot and delivered very little for someone with my aims.
-                Everything i know about web development i sort of pride myself on having taught myself
-                or learned through meeting and working with some incredible people over the years.
-              </p>
-              <p>
-                I was hired straight out of university, and spent 5-6 years building websites in Drupal with some of the finest people i&apos;ve ever met.
-              </p>
-              <p>
-                After that, I spent nearly six years running my own
-                freelancing business - <a className="underline" href="https://blacklabsoftware.co.uk">Black Lab Software</a> -
-                working with fantastic clients in the healthcare and recruitment sectors.
-              </p>
-              <p>Now? I&apos;m working at the fantastic <a className="underline" href="https://socialsync.io">Social Sync</a> with a brilliant
-                team who are focused on building best-in-class tools for nonprofits
-                to be able to run fundraising campaigns without paying extortionate amounts to
-                fundraising companies.
-              </p>
+              <h1>
+                Welcome to Elsayed Kamal's World! 👨‍💻</h1> <p>Hello, I'm Elsayed Kamal! I'm a web developer and I specialize in Laravel. Always excited to work on new projects and new challenges with this fantastic framework!</p> <p>🌐 I absolutely love web scraping! Being able to pull information from other sites is a kind of magic for me. Also, I truly enjoy the process of building APIs. It is like constructing the backbone of an application. I simply love it! 💚</p> <p>🔧 Apart from this, I have a profound interest in hacking Electron apps and finding vulnerabilities. I consider these tasks as treasure hunting. They help me to improve my skills while providing an essential service. 🔒</p> <p>✍️ Outside of coding, you can find me sipping on a cup of coffee ☕, exploring new music 🎧, or delving into a great book 📚. I'm constantly seeking out new challenges and areas to grow in both personally and professionally.</p> <p>🚀 Fasten your seat belts and join me in this journey of code, curiosity and coffee!</p>
             </div>
           </div>
           <div className="lg:pl-20">
             <ul role="list">
-              <SocialLink href="https://twitter.com/danmatthews" icon={TwitterIcon}>
+              <SocialLink href="https://twitter.com/el_sayed85" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://instagram.com/danmatthews" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink>
-              <SocialLink href="https://github.com/danmatthews" icon={GitHubIcon} className="mt-4">
+              <SocialLink href="https://github.com/elsayed85" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/daniel-matthews-1871aaba/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink href="https://www.linkedin.com/in/elsayed85" icon={LinkedInIcon} className="mt-4">
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:hello@danmatthews.me"
+                href="mailto:el_sayed_kamal@icloud.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                hello@danmatthews.me
+                el_sayed_kamal@icloud.com
               </SocialLink>
             </ul>
           </div>

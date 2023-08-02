@@ -24,12 +24,12 @@ export function Footer() {
                 <NavLink href="/">Home</NavLink>
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/posts">Posts</NavLink>
-                {/*<NavLink href="/projects">Projects</NavLink>*/}
+                <NavLink href="/projects">Projects</NavLink>
                 {/*<NavLink href="/speaking">Speaking</NavLink>*/}
-                {/*<NavLink href="/uses">Uses</NavLink>*/}
+                <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Dan Matthews. All rights
+                &copy; {new Date().getFullYear()} Elsayed Kamal. All rights
                 reserved.
               </p>
             </div>

@@ -8,23 +8,20 @@ import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
   TwitterIcon,
-  InstagramIcon,
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoSocialSync from '@/images/logos/socialsync.jpg'
-import logoHydrant from '@/images/logos/hydrant.png'
-import logoBlackLab from '@/images/logos/blacklab.png'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoFika from '@/images/logos/fika.png'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import elzero_1 from '@/images/photos/elzero_1.jpg'
+import me_4 from '@/images/photos/me_4.jpeg'
+import me_1 from '@/images/photos/me_1.jpg'
+import me_2 from '@/images/photos/me_2.jpg'
+import me_3 from '@/images/photos/me_3.jpg'
+
+import logoErada from '@/images/logos/erada.jpeg'
+import logoCloudvests from '@/images/logos/cloudvests.jpeg'
+import logoDigitalRoots from '@/images/logos/digital-roots.jpeg'
+import logoFrelancer from '@/images/logos/freelancer.jpg'
+
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -143,35 +140,35 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Social Sync',
-      title: 'Head Of Engineering',
-      logo: logoSocialSync,
-      start: '2022',
+      company: 'Digital Roots',
+      title: 'Laravel Developer',
+      logo: logoDigitalRoots,
+      start: 'Mar 2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
-      {
-      company: 'Fika apps',
-      title: 'Hybrid App Developer',
-      logo: logoFika,
-      start: '2018',
-      end: '2019',
-    },
     {
-      company: 'Black Lab Software',
-      title: 'Owner/Developer',
-      logo: logoBlackLab,
-      start: '2016',
-      end: '2022',
-    },
-    {
-      company: 'Hydrant Ltd',
+      company: 'Cloudvests',
       title: 'Web Developer',
-      logo: logoHydrant,
-      start: '2011',
-      end: '2016',
+      logo: logoCloudvests,
+      start: 'May 2021',
+      end: 'Oct 2021',
+    },
+    {
+      company: 'Freelancer',
+      title: 'Web Developer',
+      logo: logoFrelancer,
+      start: 'May 2020',
+      end: 'April 2021',
+    },
+    {
+      company: 'Erada',
+      title: 'Web Developer',
+      logo: logoErada,
+      start: 'Aug 2019',
+      end: 'May 2020',
     },
   ]
 
@@ -199,9 +196,8 @@ function Resume() {
               <dt className="sr-only">Date</dt>
               <dd
                 className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-                aria-label={`${role.start.label ?? role.start} until ${
-                  role.end.label ?? role.end
-                }`}
+                aria-label={`${role.start.label ?? role.start} until ${role.end.label ?? role.end
+                  }`}
               >
                 <time dateTime={role.start.dateTime ?? role.start}>
                   {role.start.label ?? role.start}
@@ -229,7 +225,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[me_4 , me_2 , me_1 , me_3].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -255,39 +251,40 @@ export default function Home({ articles }) {
     <>
       <Head>
         <title>
-          Dan Matthews - Web Developer
+          Elsayed Kamal - Web Developer
         </title>
         <meta
           name="description"
-          content="I’m Dan Matthews, a web developer from northern UK specialising in web applications built with Laravel and Javascript."
+          content="I’m Elsayed Kamal, a web developer from Egypt specialising in web applications built with Laravel."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            {'Hey, i\'m Dan.'}
+            {'Hey, i\'m Sayed.'} 👋
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            A web developer living in Cumbria, in the north-west of the UK. This blog is a mish-mash of things like code tutorials & tips, technology, outdoor persuits, posts about mental health, non-neurotypical issues, social issues and more.
+            I'm Elsayed Kamal, a seasoned Laravel developer 🚀 from the heart of Egypt 🇪🇬.
+            <br />
+            I'm passionate about web scraping, hacking, and exploring digital vulnerabilities 💻.
+            <br />
+            With my skills, I've turned code into my canvas, creating, innovating, and constantly pushing the boundaries.
+            <br />
+            So buckle up and join me on this exciting journey! 🚀💻🎉
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://twitter.com/danmatthews"
+              href="https://twitter.com/el_sayed85"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://instagram.com/danmatthews"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com/danmatthews"
+              href="https://github.com/elsayed85"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://www.linkedin.com/in/daniel-matthews-1871aaba/"
+              href="https://www.linkedin.com/in/elsayed85"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
