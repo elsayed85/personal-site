@@ -68,7 +68,7 @@ export default function ArticlesIndex({ articles }) {
       { scroll: false }
     ).then(() =>
       window.scrollTo({
-        top: articlesRef.current.offsetTop - 200,
+        top: 0,
         behavior: "smooth"
       })
     );
