@@ -6,9 +6,6 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
 import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
-import url from 'url';
-import qs from 'query-string';
-
 
 function Article({ article }) {
   return (
@@ -44,13 +41,12 @@ export default function ArticlesIndex({ articles }) {
   const [articlesToShow, setArticlesToShow] = useState([]);
   const [next, setNext] = useState(0);
 
-
   const perPgae = 5;
   const articlesRef = useRef(null); // Ref for articles section
   const router = useRouter();
+  const currentPage = parseInt(router.query.page) || 1;
 
   useEffect(() => {
-    const currentPage = parseInt(router.query.page) || 1;
     const start = (currentPage - 1) * perPgae;
     const end = start + perPgae;
     setArticlesToShow(articles.slice(start, end))
@@ -74,7 +70,7 @@ export default function ArticlesIndex({ articles }) {
     );
   };// eslint-disable-line react-hooks/exhaustive-deps
 
-  const noMoreArticles = next >= articles.length;
+  const noMoreArticles = articlesToShow.length;
 
   return (
     <>
@@ -104,11 +100,15 @@ export default function ArticlesIndex({ articles }) {
               Load more
             </button>
           ) : (
-            <p className="text-center mt-6">
-              No more articles to load!
+            <p style={{
+              marginTop: '1rem',
+              fontSize: '1.5rem',
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: 'gray'
+            }}>              No more articles to load!
             </p>
           )}
-
         </div>
       </SimpleLayout>
     </>
