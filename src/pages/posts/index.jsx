@@ -106,7 +106,8 @@ export default function ArticlesIndex({ articles }) {
               fontWeight: 'bold',
               textAlign: 'center',
               color: 'gray'
-            }}>              No more articles to load!
+              }}>
+                That&apos;s all folks! 🚀
             </p>
           )}
         </div>
