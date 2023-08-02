@@ -264,11 +264,11 @@ export default function Home({ articles }) {
             {'Hey, i\'m Sayed.'} 👋
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Elsayed Kamal, a seasoned Laravel developer 🚀 from the heart of Egypt 🇪🇬.
+            I&apos;m Elsayed Kamal, a seasoned Laravel developer 🚀 from the heart of Egypt 🇪🇬.
             <br />
-            I'm passionate about web scraping, hacking, and exploring digital vulnerabilities 💻.
+            I&apos;m passionate about web scraping, hacking, and exploring digital vulnerabilities 💻.
             <br />
-            With my skills, I've turned code into my canvas, creating, innovating, and constantly pushing the boundaries.
+            With my skills, I&apos;ve turned code into my canvas, creating, innovating, and constantly pushing the boundaries.
             <br />
             So buckle up and join me on this exciting journey! 🚀💻🎉
           </p>
