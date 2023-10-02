@@ -25,10 +25,10 @@ const projects = [
   {
     name: 'Copilot Database Assistant (AI)',
     description: 'Laravel Copilot Database Assistant: Ask in human language, get SQL query, and results.',
-    link: { href: 'https://github.com/elsayed85/XCopilot', label: 'elsayed85/XCopilot' },
+    link: { href: 'https://github.com/elsayed85/copilot-ask-database', label: 'elsayed85/copilot-ask-database' },
     logo: logoPlanetaria,
   },
-  
+
   {
     name: 'Ray (VScode Extension)',
     description: 'Ray is a VScode extension that allows you to debug your Laravel applications with Ray.',
