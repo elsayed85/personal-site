@@ -101,7 +101,7 @@ export default function ArticlesIndex({ articles }) {
             </button>
           ) : (
             <p style={{
-              marginTop: '1rem',
+              marginTop: '5rem',
               fontSize: '1.5rem',
               fontWeight: 'bold',
               textAlign: 'center',
