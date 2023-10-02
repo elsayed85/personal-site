@@ -11,11 +11,6 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import elzero_1 from '@/images/photos/elzero_1.jpg'
-import me_4 from '@/images/photos/me_4.jpeg'
-import me_1 from '@/images/photos/me_1.jpg'
-import me_2 from '@/images/photos/me_2.jpg'
-import me_3 from '@/images/photos/me_3.jpg'
 
 import logoErada from '@/images/logos/erada.jpeg'
 import logoCloudvests from '@/images/logos/cloudvests.jpeg'
@@ -108,35 +103,6 @@ function SocialLink({ icon: Icon, ...props }) {
   )
 }
 
-function Newsletter() {
-  return (
-    <form
-      action="/thank-you"
-      className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
-    >
-      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <MailIcon className="h-6 w-6 flex-none" />
-        <span className="ml-3">Stay up to date</span>
-      </h2>
-      <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-        Get notified when I publish something new, and unsubscribe at any time.
-      </p>
-      <div className="mt-6 flex">
-        <input
-          type="email"
-          placeholder="Email address"
-          aria-label="Email address"
-          required
-          className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-rose-500 focus:outline-none focus:ring-4 focus:ring-rose-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-rose-400 dark:focus:ring-rose-400/10 sm:text-sm"
-        />
-        <Button type="submit" className="ml-4 flex-none">
-          Join
-        </Button>
-      </div>
-    </form>
-  )
-}
-
 function Resume() {
   let resume = [
     {
@@ -144,10 +110,7 @@ function Resume() {
       title: 'Laravel Developer',
       logo: logoDigitalRoots,
       start: 'Mar 2023',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
+      end: 'Aug 2023',
     },
     {
       company: 'Cloudvests',
@@ -219,32 +182,6 @@ function Resume() {
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
-
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[me_4, me_2, me_1, me_3].map((image, imageIndex) => (
-          <div
-            key={image.src}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
-              rotations[imageIndex % rotations.length]
-            )}
-          >
-            <Image
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 export default function Home({ articles }) {
   return (
@@ -264,13 +201,9 @@ export default function Home({ articles }) {
             {'Hey, i\'m Sayed.'} 👋
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Elsayed Kamal, a seasoned Laravel developer 🚀 from the heart of Egypt 🇪🇬.
+            I&apos;m Elsayed Kamal, Backend developer 🚀🇪🇬.
             <br />
-            I&apos;m passionate about web scraping, hacking, and exploring digital vulnerabilities 💻.
-            <br />
-            With my skills, I&apos;ve turned code into my canvas, creating, innovating, and constantly pushing the boundaries.
-            <br />
-            So buckle up and join me on this exciting journey! 🚀💻🎉
+            I&apos;m passionate about coding and loves to explore new technologies 💻.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -299,7 +232,6 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>

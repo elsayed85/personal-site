@@ -11,40 +11,42 @@ import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 const projects = [
   {
-    name: 'Planetaria',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
+    name: 'Copilot Chat (AI)',
+    description: 'A chat application that allows you to chat with Github Copilot.',
+    link: { href: 'https://github.com/elsayed85/laravel-github-copilot-chat', label: 'elsayed85/laravel-github-copilot-chat' },
     logo: logoPlanetaria,
   },
   {
-    name: 'Animaginary',
-    description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+    name: 'XCopilot (AI)',
+    description: 'Share Your Github Copilott Account with your friends (Securely) & Chat.',
+    link: { href: 'https://github.com/elsayed85/XCopilot', label: 'elsayed85/XCopilot' },
+    logo: logoPlanetaria,
   },
   {
-    name: 'HelioStream',
-    description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+    name: 'Copilot Database Assistant (AI)',
+    description: 'Laravel Copilot Database Assistant: Ask in human language, get SQL query, and results.',
+    link: { href: 'https://github.com/elsayed85/XCopilot', label: 'elsayed85/XCopilot' },
+    logo: logoPlanetaria,
+  },
+  
+  {
+    name: 'Ray (VScode Extension)',
+    description: 'Ray is a VScode extension that allows you to debug your Laravel applications with Ray.',
+    link: { href: 'https://github.com/elsayed85/ray_vscode', label: 'elsayed85/ray_vscode' },
+    logo: logoPlanetaria,
   },
   {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+    name: 'Freelancer.com (VScode Extension)',
+    description: 'Allows you to generate proposal with gpt-3 for laravel projects inside VScode.',
+    link: { href: 'https://github.com/elsayed85/freelancer.com_vsocode', label: 'elsayed85/freelancer.com_vsocode' },
+    logo: logoPlanetaria,
   },
   {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+    name: 'MailHog (VScode Extension)',
+    description: 'MailHog is an email testing tool for developers: Show emails sent from your app inside VScode.',
+    link: { href: 'https://github.com/elsayed85/mailhog_vscode', label: 'elsayed85/mailhog_vscode' },
+    logo: logoPlanetaria,
+  }
 ]
 
 function LinkIcon(props) {

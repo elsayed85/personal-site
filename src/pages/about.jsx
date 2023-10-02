@@ -44,7 +44,7 @@ export default function About() {
         <title>About - Elsayed Kamal</title>
         <meta
           name="description"
-          content="I’m Elsayed Kamal, I build web applications for a living using Laravel & PHP"
+          content="I’m Elsayed Kamal, I build web applications using PHP & Laravel"
         />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -61,11 +61,26 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Elsayed Kamal, and oh boy... I really hate writing these about pages.
+              I’m Elsayed
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              <h1>
-                Welcome to Elsayed Kamal&apos;s World! 👨‍💻</h1> <p>Hello, I&apos;m Elsayed Kamal! I&apos;m a web developer and I specialize in Laravel. Always excited to work on new projects and new challenges with this fantastic framework!</p> <p>🌐 I absolutely love web scraping! Being able to pull information from other sites is a kind of magic for me. Also, I truly enjoy the process of building APIs. It is like constructing the backbone of an application. I simply love it! 💚</p> <p>🔧 Apart from this, I have a profound interest in hacking Electron apps and finding vulnerabilities. I consider these tasks as treasure hunting. They help me to improve my skills while providing an essential service. 🔒</p> <p>✍️ Outside of coding, you can find me sipping on a cup of coffee ☕, exploring new music 🎧, or delving into a great book 📚. I&apos;m constantly seeking out new challenges and areas to grow in both personally and professionally.</p> <p>🚀 Fasten your seat belts and join me in this journey of code, curiosity and coffee!</p>
+              <p>Hello, I&apos;m <b>Elsayed Kamal</b>! I&apos;m a web developer and I specialize in <b>Laravel</b>. Always excited to work on new projects and new challenges with this fantastic framework!</p>
+              <p>
+                I&apos;ve always loved coding, and I&apos;m  constantly learning new technologies and techniques to improve my craft. One of my favorite things to do is building <b>APIs</b>. I believe that APIs are the backbone of any application, and I take great pride in constructing them.
+              </p>
+
+              <p>
+              I&apos;m  a problem solver at heart, and I enjoy tackling complex challenges. I&apos;m  a great communicator and collaborator, and I always put my <b>clients&apos; needs</b> first.
+              </p>
+
+              <p>
+              When I&apos;m  not coding, I love to explore new places and try new foods. I&apos;m  also an avid reader and love to learn about different cultures and perspectives.
+              </p>
+
+              <p>
+                If you&apos;re looking for a <b>skilled and passionate web developer</b> to bring your ideas to life, I&apos;m  the perfect choice. Let&apos;s work together to create something amazing! 💻🚀
+              </p>
+              
             </div>
           </div>
           <div className="lg:pl-20">
