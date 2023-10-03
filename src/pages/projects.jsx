@@ -8,6 +8,8 @@ import logoCopilot from '@/images/logos/copilot.png'
 import logoRay from '@/images/logos/ray.png'
 import logoFreeLancer from '@/images/logos/freelancer.jpg'
 import logoMailhog from '@/images/logos/mailhog.png'
+import chatPdf from '@/images/logos/chat_pdf.png'
+import netflix from '@/images/logos/netflix.png'
 
 const projects = [
   {
@@ -16,7 +18,18 @@ const projects = [
     link: { href: 'https://github.com/elsayed85/XCopilot', label: 'elsayed85/XCopilot' },
     logo: logoCopilot,
   },
-
+  {
+    name: 'Chat With PDF (AI)',
+    description: 'convert PDF to json, generate embeddings, ask questions, get answers with openai gpt-3.',
+    link: { href: 'https://github.com/elsayed85/ask_gpt_using_pdfs', label: 'elsayed85/ask_gpt_using_pdfs' },
+    logo: chatPdf,
+  },
+  {
+    name: 'Xtreaming (Streaming Platform)',
+    description: 'Streaming Platform (> 20 websites) in one place, TMDB API, Filament Admin Panel, and more.',
+    link: { href: 'https://github.com/elsayed85/xtreaming', label: 'elsayed85/xtreaming' },
+    logo: netflix,
+  },
   {
     name: 'Ray (VScode Extension)',
     description: 'Ray is a VScode extension that allows you to debug your Laravel applications with Ray.',

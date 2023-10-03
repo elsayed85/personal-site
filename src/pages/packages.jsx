@@ -57,9 +57,15 @@ const packages = [
     logo: gitir,
   },
   {
-    name: 'FaselHd',
+    name: 'FaselHd (Laravel)',
     description: 'Search, Download, and Watch Movies & Series From faselhd.club',
     link: { href: 'https://github.com/elsayed85/lara-faselhd', label: 'elsayed85/lara-faselhd' },
+    logo: faselhd,
+  },
+  {
+    name: 'FaselHd (Nodejs)',
+    description: 'Search, Download, and Watch Movies & Series From faselhd.club',
+    link: { href: 'https://github.com/elsayed85/faselhd_api_node', label: 'elsayed85/faselhd_api_node' },
     logo: faselhd,
   },
   {

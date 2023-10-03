@@ -1,0 +1,164 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const meta = {
+  author: 'Elsayed Kamal',
+  date: '2023-01-18',
+  title: 'Mastering Laravel: My Go-To Dev Tools & Workflow (Part 1)',
+  description:
+    'A look at my go-to dev tools and workflow for building Laravel apps.',
+}
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+![](https://cdn-images-1.medium.com/max/2400/1*H-gKPZmwBgL65f-qZwUNUA.jpeg)
+
+As a senior Laravel developer, I’ve learned that having the right set of tools and an efficient workflow can make all the difference in productivity and code quality. In this Medium post, I’ll share my personal collection of development tools and extensions, along with my workflow for developing Laravel projects. From basic to advanced, these tools have helped me optimize my work and ensure that I’m making the most of my time as a developer.
+
+ 1. VSCode — The Foundation:
+
+Visual Studio Code (VSCode) has become my go-to code editor for its ease of use and wide range of features. VSCode offers excellent support for Laravel development, thanks to the array of extensions available within the marketplace.
+
+Essential VSCode Extensions for Laravel Development:
+
+a. PHP IntelliSense: This extension provides intelligent code completion, helping to improve the overall efficiency while writing PHP code by providing accurate suggestions as you type.
+
+b. PHP Intelephense: Intelephense is a fast and feature-rich PHP language server, which offers advanced auto-complete, function signatures, and semantic analysis — all of which play a significant role in enhancing productivity.
+
+c. Laravel Extension Pack: This is a collection of various essential extensions for Laravel development. It includes syntax highlighting, snippets, Eloquent model factories, and much more.
+
+d. Laravel Pack: Another useful Laravel extension pack, it comprises extensions like Blade snippets, Laravel Artisan, and Route IntelliSense, making it easier to work with Laravel.
+
+e. Laravel Goto Config: This extension allows you to quickly navigate to Laravel’s config files, ensuring easy access to essential settings and reducing the time spent searching.
+
+f. Laravel Goto Controller: With this extension, jumping to the desired controller from routes or views becomes a breeze. It simplifies navigation and speeds up the coding process.
+
+g. Laravel Goto Env: Managing environment variables is crucial, and this extension allows you to quickly access and edit your .env file from anywhere within your project.
+
+h. Laravel Goto View: This helpful tool allows you to navigate directly to a view file from your controller — streamlining your workflow and minimizing the time spent searching for files.
+
+2. Git and Composer — Essential Tools for Modern Developers:
+
+a. Git: Version control is vital when working on any development project, and Git has become the industry standard. Git allows me to track changes in my code, work collaboratively with other developers, and maintain a well-organized codebase. By integrating Git with VSCode, I can seamlessly commit changes, merge branches, and navigate through my code’s history.
+
+b. Composer: As Laravel’s primary dependency manager, Composer plays an essential role in building and maintaining my projects. Composer not only manages the installation and updating of Laravel packages but also simplifies their integration with autoloaders. It helps to standardize the structure of PHP applications and streamline the inclusion of external libraries.
+
+c. Git Aliases and Artisan Commands: To make the most out of Git, I’ve created a set of aliases that help me quickly access frequently used commands and avoid memorizing or typing lengthy command lines. These aliases enable me to perform operations like pulling, pushing, and merging with ease. Here’s an example of my Git aliases:
+
+``` bash ./bashrc
+alias pa='php artisan'
+alias pas='php artisan serve'
+alias ray='composer require spatie/laravel-ray'
+alias rayd='composer require spatie/laravel-ray --dev'
+alias routes='php artisan route:list'
+alias query='composer require mouadziani/laravel-query-inspector'
+
+alias pam='php artisan migrate'
+alias pamr='php artisan migrate:reset'
+alias pamf='php artisan migrate:fresh'
+
+alias res='php artisan make:resource'
+
+alias wire='php artisan make:livewire'
+
+alias work='php artisan queue:work'
+alias ws='php artisan  websockets:serve'
+
+alias pamm='php artisan make:migration'
+alias pamc='php artisan make:controller'
+alias pams='php artisan make:seeder'
+alias seeder='php artisan make:seeder'
+
+alias pamr='php artisan make:request'
+alias request='php artisan make:request'
+
+alias event='php artisan make:event'
+
+alias pamnoti='php artisan make:notification'
+alias pamn='php artisan make:notification'
+alias noti='php artisan make:notification'
+
+alias model='php artisan make:model'
+alias policy='php artisan make:policy'
+
+alias middleware='php artisan make:middleware'
+alias mid='php artisan make:middleware'
+alias mtest='php artisan pest:test'
+
+alias seed='php artisan db:seed'
+
+alias ccache='php artisan cache:clear'
+alias cview='php artisan view:clear'
+alias croute='php artisan route:clear'
+alias cconfig='php artisan config:clear'
+
+alias wip='git add . && git commit -m “wip” && git push origin master'
+alias gst='git status'
+alias commit='git add . & git commit -m'
+
+alias npmi='npm install'
+alias npmw='npm run watch'
+alias npmd='npm run dev'
+alias npmp='npm run prod'
+
+alias crq='composer require'
+alias crv='composer remove'
+alias crd='composer dumpautoload'
+
+
+alias winpwd='cygpath -aw .'
+alias clearlog='rm $(winpwd)/storage/logs/laravel.log'
+alias clearlogs='find $(winpwd)/storage/logs -name '*.log' -delete'
+```
+
+In addition to Git aliases, I also enjoy using Laravel’s Artisan commands, which provide a powerful command-line interface for common tasks such as migrations, generating controllers, or running tests. To speed up my workflow even further, I have created shortcuts for commonly used Artisan commands, enabling me to execute tasks such as generating new migrations or running tests with minimal typing.
+
+3. Debugging Made Easy with [Ray](https://github.com/spatie/ray):
+
+a. [Ray](https://github.com/spatie/ray): Debugging is an integral part of any development process, and having the right tool makes all the difference. Ray has become my go-to debugging tool for its outstanding capabilities and integration with Laravel. With Ray, I can easily track errors, monitor performance, and debug my code with ease. Its clean interface and robust feature set make it a valuable addition to my Laravel development toolkit.
+
+b. My Custom Ray VSCode Extension: As a dedicated user of both Ray and VSCode, I decided to build a custom Ray extension for VSCode. This extension brings Ray’s powerful debugging capabilities directly within the VSCode editor, enhancing my workflow and increasing productivity.
+
+I have shared my experience and insights on creating this Ray extension in [a comprehensive LinkedIn post](https://www.linkedin.com/posts/elsayed85_laravel-debugging-vscode-activity-7059961440471834624-VVtX?utm_source=share&utm_medium=member_desktop). In this post, I explain the motivation behind this project, the challenges I faced during development, and the benefits it brings to my Laravel development experience. Check out the post to learn more about this useful addition to my Laravel toolkit.
+
+4. Mail Debugging Made Simple with [MailHog](https://github.com/mailhog/MailHog) and VSCode Extension:
+
+a. MailHog: While working on Laravel projects, debugging emails can be a challenging task. MailHog has proven to be an invaluable tool for debugging email-related issues during development. Serving as a mail sandbox, MailHog intercepts outgoing emails and presents them in a user-friendly interface. With MailHog, I can conveniently test and debug my outgoing mail without worrying about accidentally sending test emails to real users.
+
+b. [My Custom MailHog VSCode Extension](https://www.linkedin.com/posts/elsayed85_vscode-mailhog-laravel-activity-7061223394695950336-Ean2?utm_source=share&utm_medium=member_desktop): In order to streamline my workflow and enhance my mail debugging experience, I developed a custom VSCode extension for MailHog. This extension displays incoming mails directly within the VSCode editor, eliminating the need to switch between multiple applications while debugging email functionality.
+
+5. AI-Powered Development with [GitHub Copilot](https://github.com/features/copilot):
+
+[GitHub Copilot](https://github.com/features/copilot): As a developer, I’m always on the lookout for tools that can reduce friction and improve my productivity. GitHub Copilot is an AI-powered coding assistant that has transformed the way I develop Laravel applications. By offering instant code suggestions based on the context, Copilot drastically speeds up the development process and helps me write clean, efficient code.
+
+[GitHub Copilot X ](https://github.com/features/preview/copilot-x)— The Future of AI-Powered Software Development:
+
+As an AI-driven pair programmer, GitHub Copilot is already transforming the development experience by providing instant code suggestions, promoting best practices, and improving overall productivity. With its new advancements and features, GitHub Copilot X aims to take AI assistance to the next level.
+
+ 1. [Laravel Valet](https://laravel.com/docs/10.x/valet): Cross-Platform Local Development Made Easy:
+
+a. Overview: Laravel Valet is a lightweight local development environment designed to simplify the process of setting up Laravel applications across various platforms. It focuses on providing a fast, minimalistic, and easy-to-use local hosting system, enabling developers to focus on coding instead of managing complex server configurations.
+
+b. Windows: Valet for Windows, although not officially supported, is available through third-party projects like [Valet for Windows](https://github.com/cretueusebiu/valet-windows) and [Acrylic DNS Proxy](https://github.com/alteraid/whip/tree/master/acrylic-dns-proxy). These solutions enable developers to run Valet on Windows machines. They automate tasks like server and DNS configuration, providing a similar development experience to the official Laravel Valet.
+
+c. Linux: [Valet for Linux](https://github.com/cpriego/valet-linux) extends Laravel Valet’s simple setup and development experience to Linux users. This version of Valet offers support for various PHP versions and integrates seamlessly with the Linux operating system, allowing Laravel developers on Linux to enjoy the benefits of an easy-to-use local development environment.
+
+d. macOS: Laravel Valet is natively designed for macOS and requires PHP and Homebrew to be installed. Laravel developers on macOS can take advantage of Valet’s automatic domain resolution through the .test TLD and ability to share sites publicly via Ngrok, making it an ideal local development solution for Mac users.
+
+By offering cross-platform support, Laravel Valet ensures that developers across Windows, Linux, and macOS can effortlessly set up their Laravel projects and streamline their local development process.
+
+ 1. [Postman](https://www.postman.com/): Simplifying API Development and Testing:
+
+a. Overview: Postman is a powerful API development tool that helps developers design, build, test, and document APIs efficiently and consistently. With its comprehensive suite of features, Postman has become a staple tool for managing and testing API endpoints in modern software development.
+
+b. Key Features:
+
+i. Easy API Design: Postman offers a user-friendly interface for defining API endpoints, setting request parameters, and managing headers. It also allows developers to maintain different environments with different configuration values.
+
+ii. Testing and Validation: With its built-in scripting capabilities, Postman enables developers to create various test suites and seamlessly integrate them into the API development process. By writing and running tests directly in the Postman interface, developers can validate API responses, ensure proper error handling, and verify correct data formats.
+
+ 1. [ChatGPT Sidebar Chrome Extension](https://chrome.google.com/webstore/detail/sider-chatgpt-sidebar-gpt/difoiogjjojoaoomphldepapgpbgkhkb): An AI Assistant for Your Web Experience
+
+Overview: The ChatGPT Sidebar is a Chrome extension that grants users instant access to a powerful AI assistant (powered by OpenAI) while browsing any website. It provides various benefits to simplify and enhance your web experience by supplying on-demand information and insights.
+
+In conclusion, this brief overview showcases a variety of important development tools that help optimize and streamline the software development process. These tools cover areas such as coding, version control, debugging, local development environments, API testing, and AI assistance. While I have touched on many essential tools, there are certainly more to explore in order to enhance your development experience.
+
+If you found this information helpful or would like to delve deeper into these topics, please feel free to ask, and I would be more than happy to provide further details or discuss other tools relevant to your interests.

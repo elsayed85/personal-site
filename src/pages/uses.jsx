@@ -47,7 +47,6 @@ export default function Uses() {
           </ToolsSection>
 
           <ToolsSection title="Software">
-          
             <Tool title="Ubuntu with GNOME" href={'https://ubuntu.com/'}>
               I use Ubuntu 22.04.3 LTS. It’s fast, stable, and easy to use.
             </Tool>
@@ -78,7 +77,12 @@ export default function Uses() {
             <Tool title="RedisInsight" href={'https://redislabs.com/redis-enterprise/redis-insight/'}>
               RedisInsight is a great tool for managing Redis.
             </Tool>
+          </ToolsSection>
 
+          <ToolsSection title="Debugging">
+            <Tool title="Ray" href={'https://myray.app/'}>
+            Ray is a desktop application that serves as the dedicated home for debugging output. Send, format and filter debug information from both local projects and remote servers.
+            </Tool>
           </ToolsSection>
 
           <ToolsSection title="Productivity">
@@ -103,6 +107,12 @@ export default function Uses() {
               Termius is a great SSH client, and it’s available on all platforms. I use it to connect to my servers.
             </Tool>
 
+          </ToolsSection>
+
+          <ToolsSection title="Other">
+            <Tool title="Spotify" href={'https://www.spotify.com/'}>
+              CairoKee , Hamza Namira , Om’Kalthoum , and more. I listen to music all day long.
+            </Tool>
           </ToolsSection>
         </div>
       </SimpleLayout>
