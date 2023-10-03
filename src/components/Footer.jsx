@@ -38,6 +38,7 @@ export function Footer() {
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/posts">Posts</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
+                <NavLink href="/packages">Packages</NavLink>
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <div className="flex gap-6">
