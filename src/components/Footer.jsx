@@ -1,7 +1,12 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/Container'
 
+import { Container } from '@/components/Container'
+import {
+  TwitterIcon,
+  GitHubIcon,
+  LinkedInIcon,
+} from '@/components/SocialIcons'
 function NavLink({ href, children }) {
   return (
     <Link
@@ -9,6 +14,14 @@ function NavLink({ href, children }) {
       className="transition hover:text-rose-500 dark:hover:text-rose-400"
     >
       {children}
+    </Link>
+  )
+}
+
+function SocialLink({ icon: Icon, ...props }) {
+  return (
+    <Link className="group -m-1 p-1" {...props}>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
   )
 }
@@ -28,10 +41,23 @@ export function Footer() {
                 {/*<NavLink href="/speaking">Speaking</NavLink>*/}
                 <NavLink href="/uses">Uses</NavLink>
               </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Elsayed Kamal. All rights
-                reserved.
-              </p>
+              <div className="flex gap-6">
+                <SocialLink
+                  href="https://github.com/elsayed85"
+                  aria-label="Follow on GitHub"
+                  icon={GitHubIcon}
+                />
+                <SocialLink
+                  href="https://www.linkedin.com/in/elsayed85"
+                  aria-label="Follow on LinkedIn"
+                  icon={LinkedInIcon}
+                />
+                <SocialLink
+                  href="https://twitter.com/el_sayed85"
+                  aria-label="Follow on Twitter"
+                  icon={TwitterIcon}
+                />
+              </div>
             </div>
           </Container.Inner>
         </div>
