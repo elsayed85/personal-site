@@ -3,49 +3,37 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoCopilot from '@/images/logos/copilot.png'
+import logoRay from '@/images/logos/ray.png'
+import logoFreeLancer from '@/images/logos/freelancer.jpg'
+import logoMailhog from '@/images/logos/mailhog.png'
 
 const projects = [
-  {
-    name: 'Copilot Chat (AI)',
-    description: 'A chat application that allows you to chat with Github Copilot.',
-    link: { href: 'https://github.com/elsayed85/laravel-github-copilot-chat', label: 'elsayed85/laravel-github-copilot-chat' },
-    logo: logoPlanetaria,
-  },
   {
     name: 'XCopilot (AI)',
     description: 'Share Your Github Copilott Account with your friends (Securely) & Chat.',
     link: { href: 'https://github.com/elsayed85/XCopilot', label: 'elsayed85/XCopilot' },
-    logo: logoPlanetaria,
-  },
-  {
-    name: 'Copilot Database Assistant (AI)',
-    description: 'Laravel Copilot Database Assistant: Ask in human language, get SQL query, and results.',
-    link: { href: 'https://github.com/elsayed85/copilot-ask-database', label: 'elsayed85/copilot-ask-database' },
-    logo: logoPlanetaria,
+    logo: logoCopilot,
   },
 
   {
     name: 'Ray (VScode Extension)',
     description: 'Ray is a VScode extension that allows you to debug your Laravel applications with Ray.',
     link: { href: 'https://github.com/elsayed85/ray_vscode', label: 'elsayed85/ray_vscode' },
-    logo: logoPlanetaria,
+    logo: logoRay,
   },
   {
     name: 'Freelancer.com (VScode Extension)',
     description: 'Allows you to generate proposal with gpt-3 for laravel projects inside VScode.',
     link: { href: 'https://github.com/elsayed85/freelancer.com_vsocode', label: 'elsayed85/freelancer.com_vsocode' },
-    logo: logoPlanetaria,
+    logo: logoFreeLancer,
   },
   {
     name: 'MailHog (VScode Extension)',
     description: 'MailHog is an email testing tool for developers: Show emails sent from your app inside VScode.',
     link: { href: 'https://github.com/elsayed85/mailhog_vscode', label: 'elsayed85/mailhog_vscode' },
-    logo: logoPlanetaria,
+    logo: logoMailhog,
   }
 ]
 
@@ -67,11 +55,11 @@ export default function Projects() {
         <title>Projects - Elsayed Kamal</title>
         <meta
           name="description"
-          content="Things I’ve made trying to put my dent in the universe."
+          content="Projects I've made to make a difference."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
+        title="Projects I've made to make a difference."
         intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
       >
         <ul
