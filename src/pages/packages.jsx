@@ -12,6 +12,7 @@ import showbox from '@/images/logos/showbox.png'
 import bankMisr from '@/images/logos/bankmisr.png'
 import paymob from '@/images/logos/paymob.png'
 import fawry from '@/images/logos/fawry.png'
+import myfatoorah from '@/images/logos/myfatoorah.png'
 
 const packages = [
   {
@@ -37,6 +38,12 @@ const packages = [
     description: 'BankMisr is a Laravel Package that allows you to integrate with BankMisr Payment Gateway.',
     link: { href: 'https://github.com/laravel-pay/bank-misr', label: 'laravel-pay/bank-misr' },
     logo: bankMisr,
+  },
+  {
+    name: 'My Fatoorah',
+    description: 'MyFatoorah is a Laravel Package that allows you to integrate with MyFatoorah Payment Gateway.',
+    link: { href: 'https://github.com/laravel-pay/myfatoorah', label: 'laravel-pay/myfatoorah' },
+    logo: myfatoorah,
   },
   {
     name: 'Paymob',
