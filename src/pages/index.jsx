@@ -83,6 +83,13 @@ function SocialLink({ icon: Icon, ...props }) {
 function Resume() {
   let resume = [
     {
+      company: 'Waseet.net',
+      title: 'Senior Web Developer',
+      logo: logoDigitalRoots,
+      start: 'Oct 2023',
+      end: null
+    },
+    {
       company: 'Digital Roots',
       title: 'Laravel Developer',
       logo: logoDigitalRoots,
