@@ -16,6 +16,7 @@ import logoErada from '@/images/logos/erada.jpeg'
 import logoCloudvests from '@/images/logos/cloudvests.jpeg'
 import logoDigitalRoots from '@/images/logos/digital-roots.jpeg'
 import logoFrelancer from '@/images/logos/freelancer.jpg'
+import logoWaseet from '@/images/logos/waseet.png'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -85,9 +86,12 @@ function Resume() {
     {
       company: 'Waseet.net',
       title: 'Senior Web Developer',
-      logo: logoDigitalRoots,
+      logo: logoWaseet,
       start: 'Oct 2023',
-      end: null
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      }
     },
     {
       company: 'Digital Roots',
